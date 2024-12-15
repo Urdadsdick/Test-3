@@ -238,4 +238,6 @@ if game.PlaceId == 11177482306 then
 
     -- Initialize the OrionLib GUI
     OrionLib:Init()
+else
+    print("Not in the correct game!")
 end
