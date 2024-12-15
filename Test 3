@@ -2,25 +2,7 @@ if game.PlaceId == 11177482306 then
     -- Load OrionLib for the GUI
     local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
     
-    -- Prompt for key input
-    local key = OrionLib:CreateInput({
-        Name = "Enter Key",
-        Default = "",
-        Text = "Enter Key",
-        Callback = function(input)
-            if input ~= "script" then
-                OrionLib:MakeNotification({
-                    Name = "Error",
-                    Content = "Incorrect Key!",
-                    Image = "rbxassetid://4483345998",
-                    Time = 5
-                })
-                return
-            end
-        end
-    })
-    
-    -- Create Window if the correct key is entered
+    -- Create Window
     local Window = OrionLib:MakeWindow({
         Name = "Goat Hub for Street Wars 2",
         HidePremium = false,
